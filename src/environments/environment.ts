@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  URI_AZURE: 'https://face2001.cognitiveservices.azure.com/face/v1.0/'
 };
 
 /*
