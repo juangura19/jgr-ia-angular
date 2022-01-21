@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  URI_AZURE: 'https://face2001.cognitiveservices.azure.com/face/v1.0/'
+  URI_AZURE: 'https://face2001.cognitiveservices.azure.com/face/v1.0/',
+  URI_BACKEND: 'http://localhost:3000'
 };
 
 /*

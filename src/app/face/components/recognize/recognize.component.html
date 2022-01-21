@@ -1,0 +1,31 @@
+<div>
+    <h1>AGREGAR</h1>
+    <input type="text" [(ngModel)]="names" placeholder="Ingresar nombres">
+    <br>
+    <div *ngIf="isVideo">
+        <video #videoElement (loadedmetadata)="loadedMetaData()" *ngIf="stream" [srcObject]="stream">
+        </video>
+        <button (click)="onCapture()">
+            capture
+        </button>
+    </div>
+    <div [class.ocultar]="isVideo">
+        <canvas #canva width="640" height="480"></canvas>
+        <button (click)="onClean()">
+            clear
+        </button>
+        <button (click)="onSave()">
+            save
+        </button>
+    </div>
+
+</div>
+<div>
+    <h1>COMPARACION</h1>
+    <video #videoElement2 (loadedmetadata)="loadedMetaData()" *ngIf="stream" [srcObject]="stream">
+    </video>
+    <button (click)="onSearch()">
+        Search
+    </button>
+    <h3>{{result}}</h3>
+</div>

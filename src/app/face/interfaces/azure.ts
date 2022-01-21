@@ -1,4 +1,4 @@
-export interface Request {
+export interface AzureRequest {
     faceId: string;
     faceIds: string[];
     maxNumOfCandidatesReturned: number;

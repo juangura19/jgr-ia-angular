@@ -1,7 +1,1 @@
-<video #videoElement (loadedmetadata)="loadedMetaData()" *ngIf="stream" [srcObject]="stream">
-</video>
-<button (click)="onCapture()">
-	capture
-</button>
-<canvas #canva width="640" height="480"></canvas>
-<p>name:{{name}}<br>confidence:{{confidence}}</p>
+<router-outlet></router-outlet>
